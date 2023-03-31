@@ -8,4 +8,4 @@ AUTHOR: Lydia Strough, WGU#002452624
 
 ENVIRONMENT: Pandorabots IDE, AIML
 
-DIRECTIONS: Read "Lydia_Strough_Task_Overview.docx" for further information.
+DIRECTIONS: Read "Lydia_Strough_Chatbot_Overview.docx" for further information about Lydia the chatbot. Read "C951_Task_1_Chatbot_Task_Overview.pdf" for further information about the performance assessment. 
