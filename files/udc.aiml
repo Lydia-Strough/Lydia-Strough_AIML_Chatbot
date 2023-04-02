@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!--
+  TITLE: Lydia, Career Advisory Chatbot (Intro to AI, C951 Task 1 PA) 
+  APPLICATION VERSION: Version 1.0
+  DATE: 03/30/2023
+  AUTHOR: Lydia Strough, WGU#002452624
+-->
+    
+<!-- Unknown Prompt -->  
+<category>
+    <pattern>*</pattern>
+    <template>
+         I have no answer for that. Please type “Hello” to start.
+    </template>
+</category>
+    
+<!-- Welcome Prompt -->   
+<category>
+    <pattern>HELLO</pattern>
+    <template>
+         Hello! My name is Lydia, your career advisory chatbot. 
+         Would you like some help selecting a career in computing?
+         <button>
+             <text>Sure!</text>
+             <postback>QUIZ</postback>
+         </button>
+         <button>
+             <text>Not right now.</text>
+             <postback>EXIT</postback>
+         </button>
+    </template>
+</category>
+
+<!-- Exit -->
+<category>
+    <pattern>EXIT</pattern>
+    <template>
+         No problem! If you change your mind, type “Hello” to try again. 
+    </template>
+</category>
+</aiml>

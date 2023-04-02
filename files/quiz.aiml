@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<!--
+  TITLE: Lydia, Career Advisory Chatbot (Intro to AI, C951 Task 1 PA) 
+  APPLICATION VERSION: Version 1.0
+  DATE: 03/30/2023
+  AUTHOR: Lydia Strough, WGU#002452624
+-->
+
+<!-- Quiz -->
+<category>
+    <pattern>QUIZ</pattern>
+    <template>
+         Great! I’m going to need some information about you. 
+         Please select a statement that relates to you the most.
+         <button>
+             <text>I am an extrovert.</text>
+             <postback>EXTROVERT</postback>
+         </button>
+         <button>
+             <text>I am an introvert.</text>
+             <postback>INTROVERT</postback>
+         </button>
+    </template>
+</category>
+
+<!-- Extrovert -->
+<category>
+    <pattern>EXTROVERT</pattern>
+    <template>
+         Thank you! I need a little more information so I can fine-tune your 
+         results. Please select another statement that relates to you the most.
+        <button>
+            <text>I enjoy taking on leadership roles.</text>
+            <postback>PROJECT MANAGER</postback>
+        </button>
+        <button>
+            <text>I would prefer to be a teammate over a team leader.</text>
+            <postback>TECH SUPPORT</postback>
+        </button>
+    </template>
+</category>
+
+<!-- Introvert -->
+<category>
+    <pattern>INTROVERT</pattern>
+    <template>
+         Thank you! I need a little more information so I can fine-tune your 
+         results. Please select another statement that relates to you the most.
+        <button>
+            <text>I enjoy working with computer hardware.</text>
+            <postback>COMPUTER HARDWARE</postback>
+        </button>
+        <button>
+            <text>I enjoy working with computer software.</text>
+            <postback>MATH</postback>
+        </button>
+    </template>
+</category>
+
+<!-- Software, Math Question -->
+<category>
+    <pattern>MATH</pattern>
+    <template>
+         Thank you! I have one more question. Please select the statement 
+         that describes you the most. 
+         <button>
+             <text>I have a strong interest in math.</text>
+             <postback>DATA SCIENCE</postback>
+         </button>
+         <button>
+             <text>I’m not a big math person.</text>
+             <postback>SOFTWARE ENGINEER</postback>
+         </button>
+    </template>
+</category>
+
+<!-- Results -->
+<!-- Project Manager -->
+<category>
+    <pattern>PROJECT MANAGER</pattern>
+    <template>
+         It looks like you might be interested in a career in Project Management.
+         Would you like to re-evaluate your choices?
+         <button>
+             <text>Sure!</text>
+             <postback>QUIZ</postback>
+         </button>
+         <button>
+             <text>No thanks.</text>
+             <postback>EXIT</postback>
+         </button>
+    </template>
+</category>
+
+<!-- Tech Support -->
+<category>
+    <pattern>TECH SUPPORT</pattern>
+    <template>
+         It looks like you might be interested in a career in Tech Support.
+         Would you like to re-evaluate your choices?
+         <button>
+             <text>Sure!</text>
+             <postback>QUIZ</postback>
+         </button>
+         <button>
+             <text>No thanks.</text>
+             <postback>EXIT</postback>
+         </button>
+    </template>
+</category>
+
+<!-- Computer Hardware Engineer -->
+<category>
+    <pattern>COMPUTER HARDWARE</pattern>
+    <template>
+         It looks like you might be interested in a career in Computer Hardware 
+         Engineering. Would you like to re-evaluate your choices?
+         <button>
+             <text>Sure!</text>
+             <postback>QUIZ</postback>
+         </button>
+         <button>
+             <text>No thanks.</text>
+             <postback>EXIT</postback>
+         </button>
+    </template>
+</category>
+
+<!-- Data Scientist -->
+<category>
+    <pattern>DATA SCIENCE</pattern>
+    <template>
+         It looks like you might be interested in a career in Data Science.
+         Would you like to re-evaluate your choices?
+         <button>
+             <text>Sure!</text>
+             <postback>QUIZ</postback>
+         </button>
+         <button>
+             <text>No thanks.</text>
+             <postback>EXIT</postback>
+         </button>
+    </template>
+</category>
+
+<!-- Software Engineer -->
+<category>
+    <pattern>SOFTWARE ENGINEER</pattern>
+    <template>
+         It looks like you might be interested in a career in Software Engineering.
+         Would you like to re-evaluate your choices?
+         <button>
+             <text>Sure!</text>
+             <postback>QUIZ</postback>
+         </button>
+         <button>
+             <text>No thanks.</text>
+             <postback>EXIT</postback>
+         </button>
+    </template>
+</category>
+</aiml>
